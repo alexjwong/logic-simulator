@@ -1,7 +1,7 @@
 #ifndef AND_H
 #define AND_H
 
-#include "gate.h"
+#include "Gate.h"
 
 class AND:Gate{
 	public:
