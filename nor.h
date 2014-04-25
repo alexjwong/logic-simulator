@@ -1,7 +1,7 @@
 #ifndef NOR_H
 #define NOR_H
 
-#include "gate.h"
+#include "Gate.h"
 
 class NOR:Gate
 {
