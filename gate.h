@@ -15,7 +15,9 @@ class Gate {
 
 	private:
 		bool input[2];
+		bool output[2];
 		int tier;
+		
 
 };
 
