@@ -1,8 +1,7 @@
 #ifndef NAND_H
 #define NAND_H
 
-#include <iostream>
-using namespace std;
+#include "gate.h"
 
 class NAND{
 public:
