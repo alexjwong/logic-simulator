@@ -1,4 +1,5 @@
-#include "gate.h"
+#include <iostream>
+using namespace std;
 
 class AND:Gate{
 	public:
