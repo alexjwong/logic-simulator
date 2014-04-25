@@ -1,8 +1,7 @@
 #ifndef NOR_H
 #define NOR_H
 
-#include <iostream>
-using namespace std;
+#include "gate.h"
 
 class NOR:Gate
 {
