@@ -5,7 +5,7 @@
 
 class AND:Gate{
 	public:
-		AND();
+		AND(bool,bool);
 
 		bool get_output();
 
