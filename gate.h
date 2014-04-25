@@ -8,7 +8,7 @@ class Gate {
 	public:
 		Gate();
 
-		bool tier_change(int new_input, bool repeat = false );
+		bool tier_change(int new_input, bool repeat = false);
 		bool get_output();
 
 		static int gate_count;
