@@ -1,8 +1,7 @@
 #ifndef AND_H
 #define AND_H
 
-#include <iostream>
-using namespace std;
+#include "gate.h"
 
 class AND:Gate{
 	public:
