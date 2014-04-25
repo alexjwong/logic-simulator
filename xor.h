@@ -1,3 +1,8 @@
+#ifndef XOR_H
+#define XOR_H
+
+#include "gate.h"
+
 class XOR:Gate
 {
 public:
@@ -6,4 +11,4 @@ public:
       
 };
 
-      
+#endif
