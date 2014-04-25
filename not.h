@@ -1,7 +1,7 @@
 #ifndef NOT_H
 #define NOT_H
 
-#include "gate.h"
+#include "Gate.h"
 
 class NOT:Gate {
 	public:
