@@ -1,7 +1,7 @@
 #ifndef OR_H
 #define OR_H
 
-#include "gate.h"
+#include "Gate.h"
 
 class OR:Gate {
 	public:
