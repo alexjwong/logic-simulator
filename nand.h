@@ -1,7 +1,7 @@
 #ifndef NAND_H
 #define NAND_H
 
-#include "gate.h"
+#include "Gate.h"
 
 class NAND{
 public:
