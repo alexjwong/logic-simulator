@@ -5,8 +5,8 @@
 
 class NOT:Gate {
 	public:
+		NOT();
 		bool get_output();
-
 };
 
 #endif
