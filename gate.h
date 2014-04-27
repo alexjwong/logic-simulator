@@ -13,6 +13,7 @@ class Gate
 		int input1;
 		int input2;
 		int tier;
+		int output;
 		
 };
 
