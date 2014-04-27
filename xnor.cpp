@@ -1,8 +1,9 @@
 #include "xnor.h"
 
 XNOR::XNOR(Gate in1, Gate in2) : Gate(){
-	input1 = in1.get_output();
-	input2 = in2.get_output();
+	input1 = in1.output;
+	input2 = in2.output;
+	output = ~(input1 ^ input2);
 
 	// Determine tier
 	if (in1.tier >= in2.tier){
@@ -11,6 +12,3 @@ XNOR::XNOR(Gate in1, Gate in2) : Gate(){
 	else tier = in2.tier +1;
 }
 
-int XNOR::get_output(){
-	return ~(input1 ^ input2);
-}
