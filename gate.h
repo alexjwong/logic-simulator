@@ -8,7 +8,7 @@ class Gate
 
 	public:
 		//void tier_change();
-		static int gate_count;
+		static int gate_count = 0;
 		
 		int input1;
 		int input2;
