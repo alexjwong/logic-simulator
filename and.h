@@ -9,8 +9,7 @@ class AND:Gate{
 		AND(Gate,Gate);
 
 		bool get_output();
-		
-		int tier;
+	
 };
 
 #endif
