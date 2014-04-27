@@ -6,5 +6,6 @@ Gate::Gate()
   input1 = 0;
   input2 = 0;
   output = 0;
+  gate_count++;
 }
 
