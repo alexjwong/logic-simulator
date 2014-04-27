@@ -1,7 +1,6 @@
 #include "not.h"
 
-NOT::NOT(Gate in1)
-{
+NOT::NOT(Gate in1) : Gate(){
 	input1 = in1.output;
 	output = ~input1;
 
