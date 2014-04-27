@@ -6,8 +6,8 @@
 class NOR:Gate
 {
 public:
-      NOR();
-      bool get_output();
+      NOR(Gate,Gate);
+      int get_output();
 };
 
 #endif
