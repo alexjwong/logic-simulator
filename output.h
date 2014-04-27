@@ -7,8 +7,8 @@ class OUTPUT:Gate{
 
 public:
 	OUTPUT(Gate);
-    	int get_output();
     	int input;
+    	int output;
 
 };
 
