@@ -1,4 +1,4 @@
-#include "NOR.h"
+#include "nor.h"
 
 NOR::NOR(Gate in1, Gate in2)
 {
