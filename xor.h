@@ -5,10 +5,10 @@
 
 class XOR:Gate
 {
-public:
-      bool get_output();
-      XOR();
-      
+	public:
+		XOR();
+
+		bool get_output();
 };
 
 #endif

@@ -3,10 +3,6 @@ logic-simulator
 
 EC327 Spring 2014 Final Project
 
-NAME?!
-
- I just wanted to profusely apologize to everyone, I’m really sorry this totally flew my mind… I posted a new poll at the bottom of the document, please mark the good times for you, and we’ll try to have a short meeting (probably like 15-30 minutes) just to catch me up on what you guys had, and try to plan what we want,(potentially we could do some PAs if people want to and have nowhere else to be)
-
 What did Caruthers say?
 He said go for it. I don’t think he cares if it’s the same thing that’s already been done. 
 
@@ -37,19 +33,6 @@ Good features to add
 		Add common elements (FA, flip flop, etc)
 	Library Switcher
 	Optimizer
-
-GROUP PHONE NUMBAHZ:
-Codie Smith: 401-486-6376
-
-Batman: 617-999-2113 (More likely to answer by facebook, FB is: Madeline Tralovitch)
-
-Alex Wong - 857-234-7507
-
-Dereck Fagundes -631-790-5143
-
-Tara Adams - 845-702-4100
-
-http://www.when2meet.com/?1742086-26izg
 
 class NOT:gate
 {
