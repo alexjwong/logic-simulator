@@ -1,4 +1,4 @@
-#include "NAND.h"
+#include "nand.h"
 
 NAND::NAND(Gate in1, Gate in2)
 {
