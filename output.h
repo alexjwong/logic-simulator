@@ -1,5 +1,5 @@
-#ifndef AND_H
-#define AND_H
+#ifndef OUTPUT_H
+#define OUTPUT_H
 
 #include "Gate.h"
 
