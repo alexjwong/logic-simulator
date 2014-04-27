@@ -3,11 +3,11 @@
 
 #include "Gate.h"
 
-class XOR:Gate
-{
-	public:
-		XOR();
+class Gate;
 
+class XOR: public Gate {
+	public:
+		XOR(Gate,Gate);
 		bool get_output();
 };
 

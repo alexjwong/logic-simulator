@@ -1,6 +1,6 @@
 #include "xnor.h"
 
-XNOR::XNOR(Gate in1, Gate in2){
+XNOR::XNOR(Gate in1, Gate in2) : Gate(){
 	input1 = get_output(in1);
 	input2 = get_output(in2);
 
@@ -11,6 +11,6 @@ XNOR::XNOR(Gate in1, Gate in2){
 	else tier = in2.tier +1;
 }
 
-int get_output::XNOR(){
+int XNOR::get_output(){
 	return ~(input1 ^ input2);
 }

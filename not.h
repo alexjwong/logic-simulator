@@ -3,9 +3,11 @@
 
 #include "Gate.h"
 
-class NOT:Gate {
+class Gate;
+
+class NOT: public Gate {
 	public:
-		NOT();
+		NOT(Gate,Gate);
 		bool get_output();
 };
 

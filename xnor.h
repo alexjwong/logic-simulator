@@ -3,10 +3,12 @@
 
 #include "Gate.h"
 
-class XNOR:Gate{
-public:
-      XNOR();
-      bool get_output();
+class Gate;
+
+class XNOR: public Gate {
+	public:
+		XNOR(Gate,Gate);
+		bool get_output();
 };
 
 #endif

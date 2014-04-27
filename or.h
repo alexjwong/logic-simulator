@@ -3,14 +3,12 @@
 
 #include "Gate.h"
 
-class OR:Gate {
+class Gate;
+
+class OR: public Gate {
 	public:
-		OR();
-
+		OR(Gate,Gate);
 		bool get_output();
-
-	private:
-
 };
 
 #endif

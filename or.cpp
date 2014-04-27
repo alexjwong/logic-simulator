@@ -1,6 +1,6 @@
 #include "or.h"
 
-OR::OR(Gate in1, Gate in2){
+OR::OR(Gate in1, Gate in2) : Gate(){
 	input1 = get_output(in1);
 	input2 = get_output(in2);
 

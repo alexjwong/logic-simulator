@@ -3,11 +3,12 @@
 
 #include "Gate.h"
 
-class NOR:Gate
-{
-public:
-      NOR(Gate,Gate);
-      int get_output();
+class Gate;
+
+class NOR: public Gate {
+	public:
+		NOR(Gate,Gate);
+		int get_output();
 };
 
 #endif
