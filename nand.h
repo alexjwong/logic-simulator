@@ -6,7 +6,7 @@
 class NAND{
 public:
       NAND(Gate,Gate);
-      bool get_output();
+      int get_output();
 };
 
 #endif
