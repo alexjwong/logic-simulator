@@ -8,7 +8,7 @@ class AND:Gate{
 	public:
 		AND(Gate,Gate);
 
-		bool get_output();
+		int get_output();
 	
 };
 
