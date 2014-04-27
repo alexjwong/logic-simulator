@@ -1,4 +1,4 @@
-#include "Gate.h"
+#include "gate.h"
 
 Gate::Gate()
 {
