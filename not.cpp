@@ -1,8 +1,8 @@
 #include "not.h"
 
 NOT::NOT(Gate in1, Gate in2) : Gate(){
-	input1 = in1.get_output();
-	input2 = in2.get_output();
+	input1 = in1.output;
+	output = ~input1;
 
 	// Determine tier
 	if (in1.tier >= in2.tier){
@@ -12,6 +12,3 @@ NOT::NOT(Gate in1, Gate in2) : Gate(){
 
 }
 
-int NOT::get_output(){
-	return ~input1;
-}
