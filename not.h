@@ -5,7 +5,7 @@
 
 class NOT:Gate {
 	public:
-		NOT(Gate,Gate);
+		NOT(Gate);
 		int get_output();
 };
 
