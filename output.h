@@ -7,9 +7,7 @@ class OUTPUT:Gate{
 
 public:
 	OUTPUT(Gate);
-    	int input;
-    	int output;
-
+    
 };
 
 #endif
