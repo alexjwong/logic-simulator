@@ -1,7 +1,6 @@
 #include "nor.h"
 
-NOR::NOR(Gate in1, Gate in2)
-{
+NOR::NOR(Gate in1, Gate in2) : Gate(){
 	input1 = get_output(in1);
 	input2 = get_output(in2);
 

@@ -3,13 +3,12 @@
 
 #include "gate.h"
 
-class AND:Gate{
-	
+class Gate;
+
+class AND: public Gate{
 	public:
 		AND(Gate,Gate);
-
 		int get_output();
-	
 };
 
 #endif

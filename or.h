@@ -8,7 +8,7 @@ class Gate;
 class OR: public Gate {
 	public:
 		OR(Gate,Gate);
-		bool get_output();
+		int get_output();
 };
 
 #endif

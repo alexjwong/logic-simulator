@@ -2,8 +2,7 @@
 
 
 
-AND::AND(Gate in1, Gate in2)
-{
+AND::AND(Gate in1, Gate in2) : Gate(){
 	std::cout << "AND gate constructed" << std::endl;
 	input1 = get_output(in1);
 	input2 = get_output(in2);

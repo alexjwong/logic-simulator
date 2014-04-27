@@ -8,7 +8,7 @@ class Gate;
 class XOR: public Gate {
 	public:
 		XOR(Gate,Gate);
-		bool get_output();
+		int get_output();
 };
 
 #endif

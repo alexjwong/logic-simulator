@@ -1,7 +1,6 @@
 #include "nand.h"
 
-NAND::NAND(Gate in1, Gate in2)
-{
+NAND::NAND(Gate in1, Gate in2) : Gate(){
 	input1 = get_output(in1);
 	input2 = get_output(in2);
 

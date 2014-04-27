@@ -3,7 +3,9 @@
 
 #include "Gate.h"
 
-class NAND{
+class Gate;
+
+class NAND: public Gate{
 public:
       NAND(Gate,Gate);
       int get_output();
