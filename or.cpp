@@ -11,6 +11,6 @@ OR::OR(Gate in1, Gate in2){
 	else tier = in2.tier +1;
 }
 
-int get_output(){
+int OR::get_output(){
 	return input1 | input2;
 }
