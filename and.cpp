@@ -1,6 +1,7 @@
 #include "and.h"
 
 
+
 AND::AND(Gate in1, Gate in2)
 {
 	std::cout << "AND gate constructed" << std::endl;
@@ -13,3 +14,11 @@ AND::AND(Gate in1, Gate in2)
 	}
 	else tier = in2.tier +1;
 }	
+
+bool AND::get_output()
+{
+if(input1 == true && input2 == true)
+return true;
+else
+return false;
+}
