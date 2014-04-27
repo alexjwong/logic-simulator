@@ -1,8 +1,9 @@
 #include "xor.h"
 
 XOR::XOR(Gate in1, Gate in2) : Gate(){
-	input1 = in1.get_output();
-	input2 = in2.get_output();
+	input1 = in1.output;
+	input2 = in2.output;
+	output = input1 ^ input2;
 
 	// Determine tier
 	if (in1.tier >= in2.tier){
@@ -12,6 +13,3 @@ XOR::XOR(Gate in1, Gate in2) : Gate(){
 
 }
 
-int XOR::get_output(){
-	return input1 ^ input2;
-}
