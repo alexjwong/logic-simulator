@@ -5,9 +5,10 @@
 
 class OUTPUT:Gate{
 
-	public:
-		OUTPUT(Gate);
-    int get_output();
+public:
+	OUTPUT(Gate);
+    	int get_output();
+    	int input;
 
 };
 
