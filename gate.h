@@ -3,16 +3,15 @@
 
 #include <iostream>
 
-class Gate {
+class Gate 
+{
 
 	public:
-		bool tier_change(int new_input, bool repeat = false);
-
+		//void tier_change();
 		static int gate_count;
-
-	private:
-		bool input1;
-		bool input2;
+		
+		int input1;
+		int input2;
 		int tier;
 		
 };
