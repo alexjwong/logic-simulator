@@ -6,9 +6,11 @@
 class AND:Gate{
 	
 	public:
-		AND(bool,bool);
+		AND(Gate,Gate);
 
 		bool get_output();
+		
+		int tier;
 };
 
 #endif
