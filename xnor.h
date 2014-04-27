@@ -8,7 +8,7 @@ class Gate;
 class XNOR: public Gate {
 	public:
 		XNOR(Gate,Gate);
-		int get_output();
+	
 };
 
 #endif
