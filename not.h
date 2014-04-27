@@ -7,7 +7,7 @@ class Gate;
 
 class NOT: public Gate {
 	public:
-		NOT(Gate,Gate);
+		NOT(Gate);
 		int get_output();
 };
 
