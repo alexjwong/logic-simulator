@@ -1,5 +1,9 @@
 #include "and.h"
 
+AND::AND()
+{
+	int tier = 0;
+}
 
 AND::AND(Gate in1, Gate in2)
 {
