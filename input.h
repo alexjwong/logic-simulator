@@ -7,6 +7,7 @@ class Gate;
 
 class INPUT: public Gate {
 	public:
+		int input;
 		INPUT(int);
 		int get_output();
 };
