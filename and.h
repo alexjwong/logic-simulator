@@ -1,9 +1,14 @@
+#ifndef AND_H
+#define AND_H
+
 #include "gate.h"
 
-class AND:Gate{
+class Gate;
+
+class AND: public Gate{
 	public:
-		AND();
-
-		bool get_output();
-
+		AND(Gate,Gate);
+	
 };
+
+#endif

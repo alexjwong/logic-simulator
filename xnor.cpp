@@ -1,9 +1,9 @@
-#include "or.h"
+#include "xnor.h"
 
-OR::OR(Gate in1, Gate in2) : Gate(){
+XNOR::XNOR(Gate in1, Gate in2) : Gate(){
 	input1 = in1.output;
 	input2 = in2.output;
-	output = input1 | input2;
+	output = ~(input1 ^ input2);
 
 	// Determine tier
 	if (in1.tier >= in2.tier){
@@ -11,5 +11,4 @@ OR::OR(Gate in1, Gate in2) : Gate(){
 	}
 	else tier = in2.tier +1;
 }
-
 

@@ -3,20 +3,19 @@
 
 #include <iostream>
 
-class Gate {
+class Gate 
+{
 
 	public:
 		Gate();
-
-		bool tier_change(int new_input, bool repeat = false );
-		bool get_output();
-
-		static int gate_count;
-
-	private:
-		bool input[2];
+		
+		static int gate_count = 0;
+		
+		int input1;
+		int input2;
 		int tier;
-
+		int output;
+		
 };
 
 #endif

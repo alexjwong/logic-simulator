@@ -1,11 +1,14 @@
-#include "gate.h"
+#ifndef OR_H
+#define OR_H
 
-class OR:Gate {
+#include "Gate.h"
+
+class Gate;
+
+class OR: public Gate {
 	public:
-		OR();
-
-		bool get_output();
-
-	private:
-
+		OR(Gate,Gate);
+		
 };
+
+#endif

@@ -1,7 +1,14 @@
-#include "gate.h"
+#ifndef NOT_H
+#define NOT_H
 
-class NOT:Gate {
+#include "Gate.h"
+
+class Gate;
+
+class NOT: public Gate {
 	public:
-		bool get_output();
-
+		NOT(Gate);
+	
 };
+
+#endif
