@@ -1,4 +1,4 @@
-#include "not.h"
+#include "NOT.h"
 
 NOT::NOT(Gate in1) : Gate(){
 	input1 = in1.output;

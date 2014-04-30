@@ -1,6 +1,4 @@
-#include "and.h"
-
-
+#include "AND.h"
 
 AND::AND(Gate in1, Gate in2) : Gate(){
 	std::cout << "AND gate constructed" << std::endl;

@@ -1,4 +1,4 @@
-#include "xor.h"
+#include "XOR.h"
 
 XOR::XOR(Gate in1, Gate in2) : Gate(){
 	input1 = in1.output;

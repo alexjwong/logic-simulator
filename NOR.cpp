@@ -1,4 +1,4 @@
-#include "nor.h"
+#include "NOR.h"
 
 NOR::NOR(Gate in1, Gate in2) : Gate(){
 	input1 = in1.output;

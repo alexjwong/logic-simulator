@@ -1,15 +1,17 @@
 #include <iostream>
 #include <string>
 
-#include "gate.h"
 #include "and.h"
+#include "gate.h"
+#include "input.h"
+#include "nand.h"
+#include "nor.h"
+#include "not.h"
+#include "or.h"
+#include "output.h"
+#include "xnor.h"
+#include "xor.h"
 
 int main() {
-
-	std::string input;
-	std::cin >> input;
-
-	if (input == "and"){
-		AND();
-	}
+	
 }
