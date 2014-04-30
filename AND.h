@@ -7,7 +7,7 @@ class Gate;
 
 class AND: public Gate{
 	public:
-		AND(Gate,Gate);
+		AND();
 	
 };
 
