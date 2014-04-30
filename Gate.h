@@ -12,7 +12,7 @@ class Gate
 		static int gate_count = 0;
 		static vector<int> all_the_gates;
 		
-		
+		int id_num;
 		int input1;
 		int input2;
 		int tier;
