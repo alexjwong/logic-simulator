@@ -10,7 +10,7 @@ class Gate
 		Gate();
 		
 		static int gate_count = 0;
-		vector<int> all_the_gates;
+		static vector<int> all_the_gates;
 		
 		
 		int input1;
