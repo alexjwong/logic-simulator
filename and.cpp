@@ -13,5 +13,4 @@ AND::AND(Gate in1, Gate in2) : Gate(){
 		tier = in1.tier + 1;
 	}
 	else tier = in2.tier + 1;
-}	
-
+}
