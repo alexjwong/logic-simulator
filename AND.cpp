@@ -1,7 +1,7 @@
 #include "AND.h"
 
-AND::AND(Gate in1, Gate in2) : Gate(){
-	std::cout << "AND gate constructed" << std::endl;
+AND::AND() : Gate()
+{
 	input1 = in1.output;
 	input2 = in2.output;
 	output = input1 & input2;
