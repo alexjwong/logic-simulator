@@ -9,6 +9,5 @@ Gate::Gate()
   gate_count++;
   id_num = gate_count;
   all_the_gates.pushback(id_num);
-  
 }
 
