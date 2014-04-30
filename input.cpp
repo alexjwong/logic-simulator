@@ -3,9 +3,5 @@
 INPUT::INPUT(int in)
 {
 	input = in;
-}
-
-int NOR::get_output()
-{
-	return input;
+	input_vec.push_back(input);
 }
