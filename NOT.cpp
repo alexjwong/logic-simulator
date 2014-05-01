@@ -11,5 +11,5 @@ void NOT::set_linkage(Gate* g1){
 }
 
 bool NOT::get_output(){
-	return ~input1.get_output();
+	return ~input1->get_output();
 }
