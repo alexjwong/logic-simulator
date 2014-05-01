@@ -8,7 +8,7 @@ class Output: public Gate {
 		Output();
 
 		void set_linkage(Gate* g1);
-		void get_output();
+		bool get_output();
 
 	private:
 		Gate* input;

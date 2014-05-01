@@ -10,5 +10,5 @@ void AND::set_linkage(Gate* g1, Gate* g2){
 }
 
 bool AND::get_output(){
-	return (input1.get_output() & input2.get_output());
+	return (input1->get_output() & input2->get_output());
 }

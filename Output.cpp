@@ -8,6 +8,6 @@ void Output::set_linkage(Gate* g1){
 	input = g1;
 }
 
-void Output::get_output(){
-	return input.get_output();
+bool Output::get_output(){
+	return input->get_output();
 }
