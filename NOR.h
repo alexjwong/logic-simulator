@@ -5,10 +5,16 @@
 
 class Gate;
 
-class NOR: public Gate {
+class NOR: public Gate{
 	public:
-		NOR(Gate,Gate);
-		int get_output();
+		NOR();
+
+		void set_linkage(Gate* g1, Gate* g2);
+		bool get_output();
+
+	private:
+		Gate* input1;
+		Gate* input2;
 };
 
 #endif
