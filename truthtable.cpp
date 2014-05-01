@@ -66,9 +66,9 @@ int main()
     
     if (amount == 2)
     {
-        for (int a=0;a==1;a++)
+        for (int a=0;a<=1;a++)
         {
-            for (int b=0;b==1;b++)
+            for (int b=0;b<=1;b++)
             {
                 input[0]->set_output(a);
                 input[1]->set_output(b);
@@ -80,11 +80,11 @@ int main()
     
     if(amount == 3)
     {
-        for(int a=0;a==1;a++)
+        for(int a=0;a<=1;a++)
         {
-            for(int b=0;b==1;b++)
+            for(int b=0;b<=1;b++)
             {
-                for(int c=0;c==1;c++)
+                for(int c=0;c<=1;c++)
                 input[0]->set_output(a);
                 input[1]->set_output(b);
                 input[2]->set_output(c);
@@ -98,13 +98,13 @@ int main()
     
     if(amount == 4)
     {
-        for(int a=0;a==1;a++)
+        for(int a=0;a<=1;a++)
         {
-            for(int b=0;b==1;b++)
+            for(int b=0;b<=1;b++)
             {
-                for(int c=0;c==1;c++)
+                for(int c=0;c<=1;c++)
                 {
-                    for (int d=0;d==1;d++)
+                    for (int d=0;d<=1;d++)
                     {
                         input[0]->set_output(a);
                         input[1]->set_output(b);
@@ -122,15 +122,15 @@ int main()
     
     if(amount == 5)
     {
-        for(int a=0;a==1;a++)
+        for(int a=0;a<=1;a++)
         {
-            for(int b=0;b==1;b++)
+            for(int b=0;b<=1;b++)
             {
-                for(int c=0;c==1;c++)
+                for(int c=0;c<=1;c++)
                 {
-                    for (int d=0;d==1;d++)
+                    for (int d=0;d<=1;d++)
                     {
-                        for(int e=0;e==1;e++)
+                        for(int e=0;e<=1;e++)
                         {
                             input[0]->set_output(a);
                             input[1]->set_output(b);
@@ -151,17 +151,17 @@ int main()
     
     if(amount == 6)
     {
-        for(int a=0;a==1;a++)
+        for(int a=0;a<=1;a++)
         {
-            for(int b=0;b==1;b++)
+            for(int b=0;b<=1;b++)
             {
-                for(int c=0;c==1;c++)
+                for(int c=0;c<=1;c++)
                 {
-                    for (int d=0;d==1;d++)
+                    for (int d=0;d<=1;d++)
                     {
-                        for(int e=0;e==1;e++)
+                        for(int e=0;e<=1;e++)
                         {
-                            for(int f=0;f==1;f++)
+                            for(int f=0;f<=1;f++)
                             {
                                 input[0]->set_output(a);
                                 input[1]->set_output(b);
@@ -185,19 +185,19 @@ int main()
     
     if(amount == 7)
     {
-        for(int a=0;a==1;a++)
+        for(int a=0;a<=1;a++)
         {
-            for(int b=0;b==1;b++)
+            for(int b=0;b<=1;b++)
             {
-                for(int c=0;c==1;c++)
+                for(int c=0;c<=1;c++)
                 {
-                    for (int d=0;d==1;d++)
+                    for (int d=0;d<=1;d++)
                     {
-                        for(int e=0;e==1;e++)
+                        for(int e=0;e<=1;e++)
                         {
-                            for(int f=0;f==1;f++)
+                            for(int f=0;f<=1;f++)
                             {
-                                for(int g=0;g==1;g++)
+                                for(int g=0;g<=1;g++)
                                 {
                                     input[0]->set_output(a);
                                     input[1]->set_output(b);
