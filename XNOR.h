@@ -5,10 +5,16 @@
 
 class Gate;
 
-class XNOR: public Gate {
+class XNOR: public Gate{
 	public:
-		XNOR(Gate,Gate);
-	
+		XNOR();
+
+		void set_linkage(Gate* g1, Gate* g2);
+		bool get_output();
+
+	private:
+		Gate* input1;
+		Gate* input2;
 };
 
 #endif
