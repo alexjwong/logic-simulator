@@ -5,7 +5,7 @@
 
 class Gate;
 
-class AXOR: public Gate{
+class XOR: public Gate{
 	public:
 		XOR();
 
