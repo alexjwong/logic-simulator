@@ -6,6 +6,7 @@
 class Gate {
 	public:
 		Gate();
+		virtual ~Gate();
 		
 		virtual bool get_output();		
 };

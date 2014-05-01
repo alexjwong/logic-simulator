@@ -1,11 +1,11 @@
-#ifndef GATE_H
-#define GATE_H
+#ifndef NOT_H
+#define NOT_H
 
 #include "Gate.h"
 
 class Gate;
 
-class NOT: public Gate{
+class NOT: public Gate {
 	public:
 		NOT();
 
