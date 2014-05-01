@@ -5,9 +5,16 @@
 
 class Gate;
 
-class XOR: public Gate {
+class AXOR: public Gate{
 	public:
-		XOR(Gate,Gate);
+		XOR();
+
+		void set_linkage(Gate* g1, Gate* g2);
+		bool get_output();
+
+	private:
+		Gate* input1;
+		Gate* input2;
 };
 
 #endif
