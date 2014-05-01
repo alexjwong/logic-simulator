@@ -19,22 +19,22 @@ int main() {
 	Input* x = new Input;
 	Input* y = new Input;
 
-	AND* gate1 = new AND;
+	OR* gate1 = new OR;
 
 	Output* o = new Output;
 
 	/*
 	x->set_output(1);
 	y->set_output(1);
+	*/
 
 	gate1->set_linkage(x,y);
 
 	o->set_linkage(gate1);
 
-	result = o->get_output();
+	//result = o->get_output();
 
-	std::cout << result << std::endl;
-	*/
+	//std::cout << result << std::endl;
 
 
 	int truthtable[4][3];
@@ -49,40 +49,18 @@ int main() {
 	truthtable[3][1] = 1;
 
 	int count = 0;
-	int result;
-	std::cout << "point1" << std::endl;
-	x->set_output(1);
-	y->set_output(1);
-	result = o->get_output();
-	//std::cout << o->get_output() << std::endl;
 
-	std::cout << result << " result" << std::endl;
-
-	/*
 	for(int i=0;i<=1;i++){
 		for(int j=0;j<=1;j++){
 			x->set_output(i);
 			y->set_output(j);
 
-			std::cout << i << j << "inside" << std::endl;
-
-
-			if (o->get_output()){
-				result = 1;
-			}
-			else result = 0;
-
-			truthtable[count][2] = result;
+			truthtable[count][2] = o->get_output();
 			count++;
 
-			std::cout << "after" << std::endl;
 		}
 	}
-	*/
 	
-
-	std::cout << "point2" << std::endl;
-
 	for(int k=0;k<4;k++){
 		for (int l=0;l<3;l++){
 			std::cout << truthtable[k][l];
