@@ -5,10 +5,16 @@
 
 class Gate;
 
-class OR: public Gate {
+class OR: public Gate{
 	public:
-		OR(Gate,Gate);
-		
+		OR();
+
+		void set_linkage(Gate* g1, Gate* g2);
+		bool get_output();
+
+	private:
+		Gate* input1;
+		Gate* input2;
 };
 
 #endif

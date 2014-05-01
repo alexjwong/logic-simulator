@@ -1,15 +1,15 @@
-#ifndef NOR_H
-#define NOR_H
+#ifndef GATE_H
+#define GATE_H
 
 #include "Gate.h"
 
 class Gate;
 
-class NOR: public Gate{
+class NOT: public Gate{
 	public:
-		NOR();
+		NOT();
 
-		void set_linkage(Gate* g1, Gate* g2);
+		void set_linkage(Gate* g1);
 		bool get_output();
 
 	private:
