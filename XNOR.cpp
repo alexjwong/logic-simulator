@@ -12,3 +12,4 @@ XNOR::XNOR(Gate in1, Gate in2) : Gate(){
 	else tier = in2.tier +1;
 }
 
+//HOLY CRAP BATMAN
