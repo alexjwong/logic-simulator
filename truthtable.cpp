@@ -37,7 +37,7 @@ int main()
             truthtable[i][(column-2)-j] = temp%2;
             temp = temp/2;
         }
-        count++;
+        count++;==
     }
     
     

@@ -1,7 +1,7 @@
 #include "Output.h"
 
 Output::Output() : Gate() {
-	num_outputs++;
+	//num_outputs++;
 	std::cout << "Output constructed." << std::endl;  
 }
 
