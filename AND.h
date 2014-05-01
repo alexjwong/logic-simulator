@@ -5,7 +5,7 @@
 
 class Gate;
 
-class AND: public Gate{
+class AND: public Gate {
 	public:
 		AND();
 
