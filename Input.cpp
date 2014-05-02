@@ -1,13 +1,15 @@
 #include "Input.h"
 
+int Input::num_inputs = 0;
+
 Input::Input() : Gate() {
-	//num_inputs++;
+	num_inputs++;
 	std::cout << "Raw input default constructed." << std::endl;
 }
 
 Input::Input(bool in) : Gate() {
 	output = in;
-	//num_inputs++;
+	num_inputs++;
 	std::cout << "Raw input constructed." << std::endl;
 }
 
