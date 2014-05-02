@@ -1,210 +1,285 @@
-#include "truthtable.h"
+#include <iostream>
+
+#include "Gate.h"
+#include "Input.h"
+#include "Output.h"
+
+#include "AND.h"
+#include "NAND.h"
+#include "NOR.h"
+#include "NOT.h"
+#include "OR.h"
+#include "XNOR.h"
+#include "XOR.h"
 #include <cmath>
+#include <cstring>
 using namespace std;
 
-int main()
-{
-    amount = num_inputs;
+int main() {
     
-    int row = pow(2,amount);
-    int column = amount+1;
+	//bool result;
     
-    int truthtable[128][8];
-    for (int i=0;i<128;i++)
-    {
-        for (int j=0;j<7;j++)
-        {
-            truthtable[i][j] = 0;
-        }
-    }
+	//Input* x = new Input;
+	//Input* y = new Input;
     
-    for (int i=0;i<row;i++)
-    {
-        for (int j=0;j<column;j++)
-        {
-            //cout << truthtable[i][j];
-        }
-        //cout << endl;
-    }
+	
+    
+	
+    
+	/*
+     x->set_output(1);
+     y->set_output(1);
+     */
+    
+	//result = o->get_output();
+    
+	//std::cout << result << std::endl;
+    
+    
+	/*int truthtable[4][3];
+     
+     truthtable[0][0] = 0;
+     truthtable[0][1] = 0;
+     truthtable[1][0] = 0;
+     truthtable[1][1] = 1;
+     truthtable[2][0] = 1;
+     truthtable[2][1] = 0;
+     truthtable[3][0] = 1;
+     truthtable[3][1] = 1;
+     
+     int count = 0;
+     
+     for(int i=0;i<=1;i++){
+     for(int j=0;j<=1;j++){
+     x->set_output(i);
+     y->set_output(j);
+     
+     truthtable[count][2] = o->get_output();
+     count++;
+     
+     }
+     }
+     
+     for(int k=0;k<4;k++){
+     for (int l=0;l<3;l++){
+     std::cout << truthtable[k][l];
+     }
+     std::cout << std::endl;
+     }
+     
+     
+     
+     delete x;
+     delete y;
+     delete gate1;
+     delete o;
+     
+     
+     */
+    
+    //test#2:
+    Input* a = new Input;
+    Input* b = new Input;
+    Input* c = new Input;
+    Input* d = new Input;
+    Input* e = new Input;
+    Input* f = new Input;
+    Input* g = new Input;
+    
+    OR* gate1 = new OR;
+    AND* gate2 = new AND;
+    gate2->set_linkage(gate1,c);
+    gate1->set_linkage(a,b);
+    Output* o = new Output;
+    o->set_linkage(gate2);
     
     int count = 0;
+    int amount = 3;
+    
+    const int row = pow(2,amount);
+    const int column = amount+1;
+    int truthtable[row][column];
+    
+    count = 0;
     int temp = 0;
     for (int i=0;i<row;i++)
     {
         temp = count;
-        for (int j=0;j<column;j++)
+        for (int j=0;j<(column-1);j++)
         {
             truthtable[i][(column-2)-j] = temp%2;
             temp = temp/2;
         }
-        count++;==
+        count++;
     }
     
-    
-    for (int i=0;i<row;i++)
-    {
-        for (int j=0;j<column;j++)
-        {
-            cout << truthtable[i][j];
-        }
-        cout << endl;
-    }
-    
-    
-   if (amount == 0)
+    if (amount == 0)
     {
         return 0;
     }
     
+    count = 0;
     if (amount == 1)
     {
-        input[0]->set_output(0);
-        input[1]->set_output(1);
-        
-        output[0]->get_output();
+        for( int i=0;i<2;i++)
+        {
+            
+            a->set_output(i);
+            
+            truthtable[count][column-1] = o->get_output();
+            count++;
+        }
     }
     
+    count = 0;
     if (amount == 2)
     {
-        for (int a=0;a<=1;a++)
+        for (int i=0;i<=1;i++)
         {
-            for (int b=0;b<=1;b++)
+            for (int j=0;j<=1;j++)
             {
-                input[0]->set_output(a);
-                input[1]->set_output(b);
+                a->set_output(i);
+                b->set_output(j);
+                
+                truthtable[count][(column-1)] = o->get_output();
+                count++;
             }
         }
-        output[0]->get_output();
-        output[1]->get_output();
     }
     
+    count = 0;
     if(amount == 3)
     {
-        for(int a=0;a<=1;a++)
+        for(int i=0;i<=1;i++)
         {
-            for(int b=0;b<=1;b++)
+            for(int j=0;j<=1;j++)
             {
-                for(int c=0;c<=1;c++)
-                input[0]->set_output(a);
-                input[1]->set_output(b);
-                input[2]->set_output(c);
+                for(int k=0;k<=1;k++)
+                {
+                    a->set_output(i);
+                    b->set_output(j);
+                    c->set_output(k);
+                    
+                    truthtable[count][(column-1)] = o->get_output();
+                    count++;
+                }
                 
             }
         }
-        output[0]->get_output();
-        output[1]->get_output();
-        output[2]->get_output();
     }
     
+    count = 0;
     if(amount == 4)
     {
-        for(int a=0;a<=1;a++)
+        for(int i=0;i<=1;i++)
         {
-            for(int b=0;b<=1;b++)
+            for(int j=0;j<=1;j++)
             {
-                for(int c=0;c<=1;c++)
+                for(int k=0;k<=1;k++)
                 {
-                    for (int d=0;d<=1;d++)
+                    for (int m=0;m<=1;m++)
                     {
-                        input[0]->set_output(a);
-                        input[1]->set_output(b);
-                        input[2]->set_output(c);
-                        input[3]->set_output(d);
+                        a->set_output(i);
+                        b->set_output(j);
+                        c->set_output(k);
+                        d->set_output(m);
+                        
+                        truthtable[count][column-1] = o->get_output();
+                        count++;
                     }
                 }
             }
         }
-        output[0]->get_output();
-        output[1]->get_output();
-        output[2]->get_output();
-        output[3]->get_output();
+        
     }
     
+    count = 0;
     if(amount == 5)
     {
-        for(int a=0;a<=1;a++)
+        for(int i=0;i<=1;i++)
         {
-            for(int b=0;b<=1;b++)
+            for(int j=0;j<=1;j++)
             {
-                for(int c=0;c<=1;c++)
+                for(int k=0;k<=1;k++)
                 {
-                    for (int d=0;d<=1;d++)
+                    for (int m=0;m<=1;m++)
                     {
-                        for(int e=0;e<=1;e++)
+                        for(int n=0;n<=1;n++)
                         {
-                            input[0]->set_output(a);
-                            input[1]->set_output(b);
-                            input[2]->set_output(c);
-                            input[3]->set_output(d);
-                            input[4]->set_output(e);
+                            a->set_output(i);
+                            b->set_output(j);
+                            c->set_output(k);
+                            d->set_output(m);
+                            e->set_output(n);
+                            
+                            truthtable[count][column-1] = o->get_output();
+                            count++;
                         }
                     }
                 }
             }
         }
-        output[0]->get_output();
-        output[1]->get_output();
-        output[2]->get_output();
-        output[3]->get_output();
-        output[4]->get_output();
     }
     
+    count = 0;
     if(amount == 6)
     {
-        for(int a=0;a<=1;a++)
+        for(int i=0;i<=1;i++)
         {
-            for(int b=0;b<=1;b++)
+            for(int j=0;j<=1;j++)
             {
-                for(int c=0;c<=1;c++)
+                for(int k=0;k<=1;k++)
                 {
-                    for (int d=0;d<=1;d++)
+                    for (int m=0;m<=1;m++)
                     {
-                        for(int e=0;e<=1;e++)
+                        for(int n=0;n<=1;n++)
                         {
-                            for(int f=0;f<=1;f++)
+                            for(int p=0;p<=1;p++)
                             {
-                                input[0]->set_output(a);
-                                input[1]->set_output(b);
-                                input[2]->set_output(c);
-                                input[3]->set_output(d);
-                                input[4]->set_output(e);
-                                input[5]->set_output(f);
+                                a->set_output(i);
+                                b->set_output(j);
+                                c->set_output(k);
+                                d->set_output(m);
+                                e->set_output(n);
+                                f->set_output(p);
+                                
+                                truthtable[count][column-1] = o->get_output();
+                                count++;
                             }
                         }
                     }
                 }
             }
         }
-        output[0]->get_output();
-        output[1]->get_output();
-        output[2]->get_output();
-        output[3]->get_output();
-        output[4]->get_output();
-        output[5]->get_output();
     }
     
+    count = 0;
     if(amount == 7)
     {
-        for(int a=0;a<=1;a++)
+        for(int i=0;i<=1;i++)
         {
-            for(int b=0;b<=1;b++)
+            for(int j=0;j<=1;j++)
             {
-                for(int c=0;c<=1;c++)
+                for(int k=0;k<=1;k++)
                 {
-                    for (int d=0;d<=1;d++)
+                    for (int m=0;m<=1;m++)
                     {
-                        for(int e=0;e<=1;e++)
+                        for(int n=0;n<=1;n++)
                         {
-                            for(int f=0;f<=1;f++)
+                            for(int p=0;p<=1;p++)
                             {
-                                for(int g=0;g<=1;g++)
+                                for(int q=0;q<=1;q++)
                                 {
-                                    input[0]->set_output(a);
-                                    input[1]->set_output(b);
-                                    input[2]->set_output(c);
-                                    input[3]->set_output(d);
-                                    input[4]->set_output(e);
-                                    input[5]->set_output(f);
+                                    a->set_output(i);
+                                    b->set_output(j);
+                                    c->set_output(k);
+                                    d->set_output(m);
+                                    e->set_output(n);
+                                    f->set_output(p);
+                                    g->set_output(q);
+                                    
+                                    truthtable[count][column-1] = o->get_output();
+                                    count++;
                                 }
                             }
                         }
@@ -212,22 +287,25 @@ int main()
                 }
             }
         }
-        output[0]->get_output();
-        output[1]->get_output();
-        output[2]->get_output();
-        output[3]->get_output();
-        output[4]->get_output();
-        output[5]->get_output();
-        output[6]->get_output();
     }
-
-    for (int i=0;i<amount;i++)
+    
+    string poop;
+    strcat(poop,"space complexity: ");
+    
+    for (int i=0;i<row;i++)
     {
-        truthtable[i][(column-1)] = output[i]->get_output();
+        for (int j=0;j<column;j++)
+        {
+            
+            poop.push_back(truthtable[i][j]+'0');
+        }
+        poop.push_back('\n');
+        
     }
+    cout << poop;
 
-
+    
+    
     
     return 0;
-    
 }
