@@ -3,10 +3,12 @@
 Gate::Gate(){
 	std::cout << "Gate constructed." << std::endl;
 	tier = 0;
+	gate_count++;
 }
 
 Gate::~Gate(){
 	std::cout << "Gate destructed." << std::endl;
+	gate_count--;
 }
 
 int Gate::get_tier(){
