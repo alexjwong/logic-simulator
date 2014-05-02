@@ -8,6 +8,8 @@ NOT::NOT() : Gate(){
 void NOT::set_linkage(Gate* g1){
 	input1 = g1;
 
+	tier = g1.tier+1;
+
 }
 
 bool NOT::get_output(){
