@@ -7,8 +7,14 @@ class Gate {
 	public:
 		Gate();
 		virtual ~Gate();
-		
-		virtual bool get_output();		
+
+		int get_tier();
+		void set_tier(int);
+		virtual bool get_output();
+
+	protected:
+		int tier;
+
 };
 
 #endif
