@@ -1,0 +1,16 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\AND.o
+./release\Gate.o
+./release\Input.o
+./release\NAND.o
+./release\NOR.o
+./release\NOT.o
+./release\OR.o
+./release\Output.o
+./release\truthtable.o
+./release\XNOR.o
+./release\XOR.o
+./release\moc_mainwindow.o
+);
