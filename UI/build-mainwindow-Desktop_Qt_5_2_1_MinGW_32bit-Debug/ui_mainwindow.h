@@ -17,8 +17,9 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QTextBrowser>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -30,7 +31,8 @@ public:
     QGraphicsView *graphicsView;
     QGraphicsView *graphicsView_2;
     QGraphicsView *graphicsView_3;
-    QTextBrowser *textBrowser;
+    QTextEdit *textEdit;
+    QPushButton *pushButton;
     QMenuBar *menuBar;
     QStatusBar *statusBar;
 
@@ -38,25 +40,28 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(763, 498);
+        MainWindow->resize(820, 578);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         graphicsView = new QGraphicsView(centralWidget);
         graphicsView->setObjectName(QStringLiteral("graphicsView"));
-        graphicsView->setGeometry(QRect(10, 0, 71, 51));
+        graphicsView->setGeometry(QRect(10, 10, 101, 101));
         graphicsView_2 = new QGraphicsView(centralWidget);
         graphicsView_2->setObjectName(QStringLiteral("graphicsView_2"));
-        graphicsView_2->setGeometry(QRect(10, 50, 71, 401));
+        graphicsView_2->setGeometry(QRect(10, 120, 101, 421));
         graphicsView_3 = new QGraphicsView(centralWidget);
         graphicsView_3->setObjectName(QStringLiteral("graphicsView_3"));
-        graphicsView_3->setGeometry(QRect(80, 0, 591, 451));
-        textBrowser = new QTextBrowser(centralWidget);
-        textBrowser->setObjectName(QStringLiteral("textBrowser"));
-        textBrowser->setGeometry(QRect(670, 0, 81, 451));
+        graphicsView_3->setGeometry(QRect(120, 10, 601, 531));
+        textEdit = new QTextEdit(centralWidget);
+        textEdit->setObjectName(QStringLiteral("textEdit"));
+        textEdit->setGeometry(QRect(730, 40, 81, 501));
+        pushButton = new QPushButton(centralWidget);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(730, 10, 81, 23));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 763, 21));
+        menuBar->setGeometry(QRect(0, 0, 820, 21));
         MainWindow->setMenuBar(menuBar);
         statusBar = new QStatusBar(MainWindow);
         statusBar->setObjectName(QStringLiteral("statusBar"));
@@ -70,6 +75,27 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
+#ifndef QT_NO_TOOLTIP
+        graphicsView->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>I/O</p></body></html>", 0));
+#endif // QT_NO_TOOLTIP
+#ifndef QT_NO_TOOLTIP
+        graphicsView_2->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Gates</p></body></html>", 0));
+#endif // QT_NO_TOOLTIP
+#ifndef QT_NO_TOOLTIP
+        graphicsView_3->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Circuit Simulator</p></body></html>", 0));
+#endif // QT_NO_TOOLTIP
+#ifndef QT_NO_TOOLTIP
+        textEdit->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Circuit information</p></body></html>", 0));
+#endif // QT_NO_TOOLTIP
+        textEdit->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"><br /></p></body></html>", 0));
+#ifndef QT_NO_TOOLTIP
+        pushButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Run the circuit</p></body></html>", 0));
+#endif // QT_NO_TOOLTIP
+        pushButton->setText(QApplication::translate("MainWindow", "Simulate!", 0));
     } // retranslateUi
 
 };

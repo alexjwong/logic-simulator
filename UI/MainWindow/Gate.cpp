@@ -1,7 +1,9 @@
 #include "Gate.h"
 
+
+
 Gate::Gate(){
-	std::cout << "Gate constructed." << std::endl;
+    std::cout << "Gate constructed." << std::endl;
 }
 
 Gate::~Gate(){

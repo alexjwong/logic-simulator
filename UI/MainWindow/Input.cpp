@@ -22,6 +22,11 @@ void Input::set_output(int in){
 		std::cout << "Something has gone terribly wrong." << std::endl;
 }
 
+
+Input::~Input(){
+    std::cout << "FFFFFFFUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUCK." << std::endl;
+}
+
 bool Input::get_output(){
 	return output;
 }

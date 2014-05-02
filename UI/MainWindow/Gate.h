@@ -4,10 +4,10 @@
 #include <iostream>
 #include <QGraphicsObject>
 
-class Gate:QGraphicsRectItem{
+class Gate: public QGraphicsRectItem{
 	public:
         Gate();
-		virtual ~Gate();
+        virtual ~Gate();
 		
         virtual bool get_output();
 };
