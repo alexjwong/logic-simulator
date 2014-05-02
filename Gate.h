@@ -7,7 +7,7 @@ class Gate {
 	public:
 		Gate();
 		virtual ~Gate();
-		
+		static int gate_count;
 		virtual bool get_output();		
 };
 
