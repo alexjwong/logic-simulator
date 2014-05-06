@@ -28,11 +28,12 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralWidget;
-    QGraphicsView *graphicsView;
-    QGraphicsView *graphicsView_2;
+    QGraphicsView *IOGates;
     QGraphicsView *graphicsView_3;
     QTextEdit *textEdit;
     QPushButton *pushButton;
+    QPushButton *pushButton_2;
+    QPushButton *clearButton;
     QMenuBar *menuBar;
     QStatusBar *statusBar;
 
@@ -43,21 +44,24 @@ public:
         MainWindow->resize(820, 578);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        graphicsView = new QGraphicsView(centralWidget);
-        graphicsView->setObjectName(QStringLiteral("graphicsView"));
-        graphicsView->setGeometry(QRect(10, 10, 101, 101));
-        graphicsView_2 = new QGraphicsView(centralWidget);
-        graphicsView_2->setObjectName(QStringLiteral("graphicsView_2"));
-        graphicsView_2->setGeometry(QRect(10, 120, 101, 421));
+        IOGates = new QGraphicsView(centralWidget);
+        IOGates->setObjectName(QStringLiteral("IOGates"));
+        IOGates->setGeometry(QRect(10, 10, 101, 511));
         graphicsView_3 = new QGraphicsView(centralWidget);
         graphicsView_3->setObjectName(QStringLiteral("graphicsView_3"));
-        graphicsView_3->setGeometry(QRect(120, 10, 601, 531));
+        graphicsView_3->setGeometry(QRect(120, 10, 601, 511));
         textEdit = new QTextEdit(centralWidget);
         textEdit->setObjectName(QStringLiteral("textEdit"));
-        textEdit->setGeometry(QRect(730, 40, 81, 501));
+        textEdit->setGeometry(QRect(730, 50, 81, 471));
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
         pushButton->setGeometry(QRect(730, 10, 81, 23));
+        pushButton_2 = new QPushButton(centralWidget);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButton_2->setGeometry(QRect(10, 520, 801, 21));
+        clearButton = new QPushButton(centralWidget);
+        clearButton->setObjectName(QStringLiteral("clearButton"));
+        clearButton->setGeometry(QRect(730, 30, 81, 23));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -76,10 +80,7 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
 #ifndef QT_NO_TOOLTIP
-        graphicsView->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>I/O</p></body></html>", 0));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        graphicsView_2->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Gates</p></body></html>", 0));
+        IOGates->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Gates</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_TOOLTIP
         graphicsView_3->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Circuit Simulator</p></body></html>", 0));
@@ -96,6 +97,8 @@ public:
         pushButton->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Run the circuit</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
         pushButton->setText(QApplication::translate("MainWindow", "Simulate!", 0));
+        pushButton_2->setText(QApplication::translate("MainWindow", "AWESOME!", 0));
+        clearButton->setText(QApplication::translate("MainWindow", "Clear", 0));
     } // retranslateUi
 
 };

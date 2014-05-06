@@ -9,7 +9,7 @@ class Input: public Gate {
 	public:
 		Input();
 		Input(bool);
-        virtual ~Input();
+        ~Input();
 
 		static int num_inputs;	
 		void set_output(int);

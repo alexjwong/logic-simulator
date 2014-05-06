@@ -36,7 +36,8 @@ HEADERS  += mainwindow.h \
     OR.h \
     Output.h \
     XNOR.h \
-    XOR.h
+    XOR.h \
+    gates.h
 
 FORMS    += mainwindow.ui
 

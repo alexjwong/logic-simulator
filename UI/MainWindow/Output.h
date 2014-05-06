@@ -5,6 +5,7 @@
 
 class Output: public Gate {
 	public:
+    bool oneLink=true;
 		Output();
 		static int num_outputs;
 		void set_linkage(Gate* g1);
