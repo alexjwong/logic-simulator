@@ -1,5 +1,7 @@
 #include "Gate.h"
 
+int Gate::gate_count = 0;
+
 Gate::Gate(){
 	std::cout << "Gate constructed." << std::endl;
 	tier = 0;
