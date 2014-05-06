@@ -5,6 +5,14 @@ int Gate::gate_count = 0;
 Gate::Gate(){
 	std::cout << "Gate constructed." << std::endl;
 	tier = 0;
+	type = 'g';
+	gate_count++;
+}
+
+Gate::Gate(char inType){
+	std::cout << "Gate constructed." << std::endl;
+	tier = 0;
+	type = inType;
 	gate_count++;
 }
 
@@ -23,4 +31,8 @@ void Gate::set_tier(int in){
 
 bool Gate::get_output(){
 	return false;
+}
+
+char Gate::get_output(){
+	return type;
 }

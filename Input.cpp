@@ -7,7 +7,7 @@ Input::Input() : Gate() {
 	std::cout << "Raw input default constructed." << std::endl;
 }
 
-Input::Input(bool in) : Gate() {
+Input::Input(bool in) : Gate('i') {
 	output = in;
 	num_inputs++;
 	std::cout << "Raw input constructed." << std::endl;

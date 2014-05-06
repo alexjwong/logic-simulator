@@ -1,25 +1,41 @@
 #include <iostream>
-
-#include "gate.h"
-#include "Input.h"
-#include "output.h"
-
-#include "and.h"
-#include "nand.h"
-#include "nor.h"
-#include "not.h"
-#include "or.h"
-#include "xnor.h"
-#include "xor.h"
 #include <cmath>
 #include <cstring>
 #include <sstream>
+
+#include "Gate.h"
+#include "Input.h"
+#include "Output.h"
+
+#include "AND.h"
+#include "NAND.h"
+#include "NOR.h"
+#include "NOT.h"
+#include "OR.h"
+#include "XNOR.h"
+#include "XOR.h"
+
 using namespace std;
 
-string generate_truthtable(input_ptrs[]) {
+string generate_truthtable(QList gates) {
+    Gate * input_ptrs[7];
+    Gate * output_ptrs[7];
+    int num_inputs = 0;
+    int num_outputs = 0;
+
+    for (int i=0;i<gates.size();i++){
+        if (gates.at(i).type() == 'i'){
+            input_ptrs[num_inputs] = gates.at(i);
+            num_inputs++;
+        }
+        else if (gates.at(i).type() == 'o'){
+            output_ptrs[num_outputs] = gates.at(i);
+            num_outputs++;
+        }
+    }
        
-    int inamount = Input::num_inputs;
-    int outamount = Output::num_outputs;
+    int inamount = num_inputs;
+    int outamount = num_outputs;
     const int row = pow(2,inamount);
     const int column = inamount + outamount;
     int truthtable[row][column];
