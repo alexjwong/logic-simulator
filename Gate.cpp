@@ -33,6 +33,6 @@ bool Gate::get_output(){
 	return false;
 }
 
-char Gate::get_output(){
+char Gate::get_type(){
 	return type;
 }
