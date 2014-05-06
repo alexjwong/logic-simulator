@@ -1,11 +1,15 @@
 #include "XNOR.h"
 
-
 XNOR::XNOR() : Gate(){
+    oneLink=false;
+    this->setToolTip("XNOR Gate");
 	std::cout << "XNOR gate constructed" << std::endl;
 }
 
+//void XNOR::set_linkage(Gate* g1){}
+
 void XNOR::set_linkage(Gate* g1, Gate* g2){
+    std::cout<<"linked \t"<<std::endl;
 	input1 = g1;
 	input2 = g2;
 }

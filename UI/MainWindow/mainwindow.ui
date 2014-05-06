@@ -14,26 +14,13 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QGraphicsView" name="graphicsView">
+   <widget class="QGraphicsView" name="IOGates">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>10</y>
       <width>101</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;I/O&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
-   <widget class="QGraphicsView" name="graphicsView_2">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>120</y>
-      <width>101</width>
-      <height>421</height>
+      <height>511</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -46,7 +33,7 @@
       <x>120</x>
       <y>10</y>
       <width>601</width>
-      <height>531</height>
+      <height>511</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -57,9 +44,9 @@
     <property name="geometry">
      <rect>
       <x>730</x>
-      <y>40</y>
+      <y>50</y>
       <width>81</width>
-      <height>501</height>
+      <height>471</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -87,6 +74,32 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="text">
      <string>Simulate!</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>520</y>
+      <width>801</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AWESOME!</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearButton">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>30</y>
+      <width>81</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear</string>
     </property>
    </widget>
   </widget>
