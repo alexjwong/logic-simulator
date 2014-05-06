@@ -16,7 +16,7 @@
 #include <sstream>
 using namespace std;
 
-int main() {
+string generate_truthtable() {
     
 	//bool result;
     
@@ -324,6 +324,8 @@ int main() {
         }
     }
     
+    
+    /*
     for (int i=0;i<row;i++)
     {
         for (int j=0;j<column;j++)
@@ -333,17 +335,17 @@ int main() {
         cout<<endl;
     }
     
-
+*/
    
     
-    
-    /* string poop;
+    string poop;
+    /* 
     
     stringstream ss;
     ss<<"Space Complexity: ";
     ss<< ((Gate::gate_count)-(Input::num_inputs)-(Output::num_outputs));
     ss<<"\n";
-    
+    */
     
     for (int i=0;i<row;i++)
     {
@@ -354,9 +356,6 @@ int main() {
         poop.push_back('\n');
         
     }
-    cout<< ss.str();
-    cout<< poop;
-    */
-    
-    return 0;
+    //cout<< ss.str();
+    return poop;
 }
