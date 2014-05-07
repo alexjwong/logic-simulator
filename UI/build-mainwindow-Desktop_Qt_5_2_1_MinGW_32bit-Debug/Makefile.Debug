@@ -243,6 +243,7 @@ debug/moc_mainwindow.cpp: ../../../../../../../Users/Evan/Downloads/Utility/Qt/C
 		../mainwindow/Gate.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/QPainter \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpainter.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpen.h \
@@ -258,6 +259,7 @@ debug/moc_mainwindow.cpp: ../../../../../../../Users/Evan/Downloads/Utility/Qt/C
 		../mainwindow/OR.h \
 		../mainwindow/XNOR.h \
 		../mainwindow/XOR.h \
+		../mainwindow/Truthtable.h \
 		../mainwindow/mainwindow.h
 	C:\Users\Evan\Downloads\Utility\Qt\Creator\5.2.1\mingw48_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 $(INCPATH) ..\mainwindow\mainwindow.h -o debug\moc_mainwindow.cpp
 
@@ -398,6 +400,7 @@ debug/main.o: ../mainwindow/main.cpp ../mainwindow/mainwindow.h \
 		../mainwindow/Gate.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/QPainter \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpainter.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpen.h \
@@ -413,6 +416,7 @@ debug/main.o: ../mainwindow/main.cpp ../mainwindow/mainwindow.h \
 		../mainwindow/OR.h \
 		../mainwindow/XNOR.h \
 		../mainwindow/XOR.h \
+		../mainwindow/Truthtable.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QApplication \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qapplication.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qcoreapplication.h \
@@ -539,6 +543,7 @@ debug/mainwindow.o: ../mainwindow/mainwindow.cpp ../mainwindow/mainwindow.h \
 		../mainwindow/Gate.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/QPainter \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpainter.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpen.h \
@@ -554,6 +559,7 @@ debug/mainwindow.o: ../mainwindow/mainwindow.cpp ../mainwindow/mainwindow.h \
 		../mainwindow/OR.h \
 		../mainwindow/XNOR.h \
 		../mainwindow/XOR.h \
+		../mainwindow/Truthtable.h \
 		ui_mainwindow.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/QVariant \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QAction \
@@ -602,13 +608,15 @@ debug/mainwindow.o: ../mainwindow/mainwindow.cpp ../mainwindow/mainwindow.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtextcursor.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtextformat.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QWidget \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/QMouseEvent
+		../mainwindow/gates.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/QMouseEvent \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\mainwindow\mainwindow.cpp
 
 debug/AND.o: ../mainwindow/AND.cpp ../mainwindow/AND.h \
 		../mainwindow/Gate.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qglobal.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qconfig.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qfeatures.h \
@@ -645,10 +653,6 @@ debug/AND.o: ../mainwindow/AND.cpp ../mainwindow/AND.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypeinfo.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypetraits.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsysinfo.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobject.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobjectdefs.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qnamespace.h \
@@ -656,8 +660,12 @@ debug/AND.o: ../mainwindow/AND.cpp ../mainwindow/AND.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstring.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qchar.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qbytearray.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qarraydata.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstringbuilder.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qcoreevent.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qscopedpointer.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qmetatype.h \
@@ -699,6 +707,7 @@ debug/AND.o: ../mainwindow/AND.cpp ../mainwindow/AND.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsharedpointer_impl.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qimage.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtransform.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/QPainter \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpainter.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpen.h \
@@ -713,8 +722,8 @@ debug/AND.o: ../mainwindow/AND.cpp ../mainwindow/AND.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\AND.o ..\mainwindow\AND.cpp
 
 debug/Gate.o: ../mainwindow/Gate.cpp ../mainwindow/Gate.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qglobal.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qconfig.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qfeatures.h \
@@ -751,10 +760,6 @@ debug/Gate.o: ../mainwindow/Gate.cpp ../mainwindow/Gate.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypeinfo.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypetraits.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsysinfo.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobject.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobjectdefs.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qnamespace.h \
@@ -762,8 +767,12 @@ debug/Gate.o: ../mainwindow/Gate.cpp ../mainwindow/Gate.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstring.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qchar.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qbytearray.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qarraydata.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstringbuilder.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qcoreevent.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qscopedpointer.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qmetatype.h \
@@ -805,6 +814,7 @@ debug/Gate.o: ../mainwindow/Gate.cpp ../mainwindow/Gate.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsharedpointer_impl.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qimage.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtransform.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/QPainter \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpainter.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpen.h \
@@ -820,8 +830,8 @@ debug/Gate.o: ../mainwindow/Gate.cpp ../mainwindow/Gate.h \
 
 debug/Input.o: ../mainwindow/Input.cpp ../mainwindow/Input.h \
 		../mainwindow/Gate.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qglobal.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qconfig.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qfeatures.h \
@@ -858,10 +868,6 @@ debug/Input.o: ../mainwindow/Input.cpp ../mainwindow/Input.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypeinfo.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypetraits.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsysinfo.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobject.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobjectdefs.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qnamespace.h \
@@ -869,8 +875,12 @@ debug/Input.o: ../mainwindow/Input.cpp ../mainwindow/Input.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstring.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qchar.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qbytearray.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qarraydata.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstringbuilder.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qcoreevent.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qscopedpointer.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qmetatype.h \
@@ -912,6 +922,7 @@ debug/Input.o: ../mainwindow/Input.cpp ../mainwindow/Input.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsharedpointer_impl.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qimage.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtransform.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/QPainter \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpainter.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpen.h \
@@ -927,8 +938,8 @@ debug/Input.o: ../mainwindow/Input.cpp ../mainwindow/Input.h \
 
 debug/NAND.o: ../mainwindow/NAND.cpp ../mainwindow/NAND.h \
 		../mainwindow/Gate.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qglobal.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qconfig.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qfeatures.h \
@@ -965,10 +976,6 @@ debug/NAND.o: ../mainwindow/NAND.cpp ../mainwindow/NAND.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypeinfo.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypetraits.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsysinfo.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobject.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobjectdefs.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qnamespace.h \
@@ -976,8 +983,12 @@ debug/NAND.o: ../mainwindow/NAND.cpp ../mainwindow/NAND.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstring.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qchar.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qbytearray.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qarraydata.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstringbuilder.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qcoreevent.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qscopedpointer.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qmetatype.h \
@@ -1019,6 +1030,7 @@ debug/NAND.o: ../mainwindow/NAND.cpp ../mainwindow/NAND.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsharedpointer_impl.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qimage.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtransform.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/QPainter \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpainter.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpen.h \
@@ -1034,8 +1046,8 @@ debug/NAND.o: ../mainwindow/NAND.cpp ../mainwindow/NAND.h \
 
 debug/NOR.o: ../mainwindow/NOR.cpp ../mainwindow/NOR.h \
 		../mainwindow/Gate.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qglobal.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qconfig.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qfeatures.h \
@@ -1072,10 +1084,6 @@ debug/NOR.o: ../mainwindow/NOR.cpp ../mainwindow/NOR.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypeinfo.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypetraits.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsysinfo.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobject.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobjectdefs.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qnamespace.h \
@@ -1083,8 +1091,12 @@ debug/NOR.o: ../mainwindow/NOR.cpp ../mainwindow/NOR.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstring.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qchar.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qbytearray.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qarraydata.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstringbuilder.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qcoreevent.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qscopedpointer.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qmetatype.h \
@@ -1126,6 +1138,7 @@ debug/NOR.o: ../mainwindow/NOR.cpp ../mainwindow/NOR.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsharedpointer_impl.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qimage.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtransform.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/QPainter \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpainter.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpen.h \
@@ -1141,8 +1154,8 @@ debug/NOR.o: ../mainwindow/NOR.cpp ../mainwindow/NOR.h \
 
 debug/NOT.o: ../mainwindow/NOT.cpp ../mainwindow/NOT.h \
 		../mainwindow/Gate.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qglobal.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qconfig.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qfeatures.h \
@@ -1179,10 +1192,6 @@ debug/NOT.o: ../mainwindow/NOT.cpp ../mainwindow/NOT.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypeinfo.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypetraits.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsysinfo.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobject.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobjectdefs.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qnamespace.h \
@@ -1190,8 +1199,12 @@ debug/NOT.o: ../mainwindow/NOT.cpp ../mainwindow/NOT.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstring.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qchar.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qbytearray.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qarraydata.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstringbuilder.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qcoreevent.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qscopedpointer.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qmetatype.h \
@@ -1233,6 +1246,7 @@ debug/NOT.o: ../mainwindow/NOT.cpp ../mainwindow/NOT.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsharedpointer_impl.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qimage.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtransform.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/QPainter \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpainter.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpen.h \
@@ -1248,8 +1262,8 @@ debug/NOT.o: ../mainwindow/NOT.cpp ../mainwindow/NOT.h \
 
 debug/OR.o: ../mainwindow/OR.cpp ../mainwindow/OR.h \
 		../mainwindow/Gate.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qglobal.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qconfig.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qfeatures.h \
@@ -1286,10 +1300,6 @@ debug/OR.o: ../mainwindow/OR.cpp ../mainwindow/OR.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypeinfo.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypetraits.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsysinfo.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobject.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobjectdefs.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qnamespace.h \
@@ -1297,8 +1307,12 @@ debug/OR.o: ../mainwindow/OR.cpp ../mainwindow/OR.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstring.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qchar.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qbytearray.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qarraydata.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstringbuilder.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qcoreevent.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qscopedpointer.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qmetatype.h \
@@ -1340,6 +1354,7 @@ debug/OR.o: ../mainwindow/OR.cpp ../mainwindow/OR.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsharedpointer_impl.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qimage.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtransform.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/QPainter \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpainter.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpen.h \
@@ -1355,8 +1370,8 @@ debug/OR.o: ../mainwindow/OR.cpp ../mainwindow/OR.h \
 
 debug/Output.o: ../mainwindow/Output.cpp ../mainwindow/Output.h \
 		../mainwindow/Gate.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qglobal.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qconfig.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qfeatures.h \
@@ -1393,10 +1408,6 @@ debug/Output.o: ../mainwindow/Output.cpp ../mainwindow/Output.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypeinfo.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypetraits.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsysinfo.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobject.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobjectdefs.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qnamespace.h \
@@ -1404,8 +1415,12 @@ debug/Output.o: ../mainwindow/Output.cpp ../mainwindow/Output.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstring.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qchar.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qbytearray.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qarraydata.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstringbuilder.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qcoreevent.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qscopedpointer.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qmetatype.h \
@@ -1447,6 +1462,7 @@ debug/Output.o: ../mainwindow/Output.cpp ../mainwindow/Output.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsharedpointer_impl.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qimage.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtransform.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/QPainter \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpainter.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpen.h \
@@ -1460,13 +1476,9 @@ debug/Output.o: ../mainwindow/Output.cpp ../mainwindow/Output.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsscene.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\Output.o ..\mainwindow\Output.cpp
 
-debug/truthtable.o: ../mainwindow/truthtable.cpp 
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\truthtable.o ..\mainwindow\truthtable.cpp
-
-debug/XNOR.o: ../mainwindow/XNOR.cpp ../mainwindow/XNOR.h \
-		../mainwindow/Gate.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+debug/truthtable.o: ../mainwindow/truthtable.cpp ../mainwindow/Gate.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qglobal.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qconfig.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qfeatures.h \
@@ -1503,10 +1515,6 @@ debug/XNOR.o: ../mainwindow/XNOR.cpp ../mainwindow/XNOR.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypeinfo.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypetraits.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsysinfo.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobject.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobjectdefs.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qnamespace.h \
@@ -1514,8 +1522,12 @@ debug/XNOR.o: ../mainwindow/XNOR.cpp ../mainwindow/XNOR.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstring.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qchar.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qbytearray.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qarraydata.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstringbuilder.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qcoreevent.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qscopedpointer.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qmetatype.h \
@@ -1557,6 +1569,126 @@ debug/XNOR.o: ../mainwindow/XNOR.cpp ../mainwindow/XNOR.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsharedpointer_impl.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qimage.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtransform.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/QPainter \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpainter.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpen.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qbrush.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qfontinfo.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qfont.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qfontmetrics.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsSceneMouseEvent \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicssceneevent.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsScene \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsscene.h \
+		../mainwindow/Input.h \
+		../mainwindow/Output.h \
+		../mainwindow/AND.h \
+		../mainwindow/NAND.h \
+		../mainwindow/NOR.h \
+		../mainwindow/NOT.h \
+		../mainwindow/OR.h \
+		../mainwindow/XNOR.h \
+		../mainwindow/XOR.h \
+		../mainwindow/Truthtable.h \
+		../mainwindow/gates.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\truthtable.o ..\mainwindow\truthtable.cpp
+
+debug/XNOR.o: ../mainwindow/XNOR.cpp ../mainwindow/XNOR.h \
+		../mainwindow/Gate.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qglobal.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qconfig.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qfeatures.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsystemdetection.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qprocessordetection.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qcompilerdetection.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qglobalstatic.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qbasicatomic.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_bootstrap.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qgenericatomic.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_msvc.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_integrity.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qoldbasicatomic.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_vxworks.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_power.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_alpha.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_armv7.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_armv6.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_armv5.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_bfin.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_ia64.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_mips.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_s390.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_sh4a.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_sparc.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_x86.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_cxx11.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_gcc.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qatomic_unix.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qmutex.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlogging.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qflags.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypeinfo.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypetraits.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsysinfo.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobject.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobjectdefs.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qnamespace.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobjectdefs_impl.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstring.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qchar.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qbytearray.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qarraydata.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstringbuilder.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qcoreevent.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qscopedpointer.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qmetatype.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qvarlengtharray.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qcontainerfwd.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qisenum.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobject_impl.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qvariant.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qmap.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qpair.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qdebug.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qhash.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtextstream.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiodevice.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlocale.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qshareddata.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qvector.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qpoint.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qset.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qcontiguouscache.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstringlist.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qdatastream.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qregexp.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstringmatcher.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrect.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsize.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpainterpath.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qmatrix.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpolygon.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qregion.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qwindowdefs.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qwindowdefs_win.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qline.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpixmap.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpaintdevice.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qcolor.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qrgb.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsharedpointer.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsharedpointer_impl.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qimage.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtransform.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/QPainter \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpainter.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpen.h \
@@ -1572,8 +1704,8 @@ debug/XNOR.o: ../mainwindow/XNOR.cpp ../mainwindow/XNOR.h \
 
 debug/XOR.o: ../mainwindow/XOR.cpp ../mainwindow/XOR.h \
 		../mainwindow/Gate.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qglobal.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qconfig.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qfeatures.h \
@@ -1610,10 +1742,6 @@ debug/XOR.o: ../mainwindow/XOR.cpp ../mainwindow/XOR.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypeinfo.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qtypetraits.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsysinfo.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/QGraphicsObject \
-		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtWidgets/qgraphicsitem.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobject.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qobjectdefs.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qnamespace.h \
@@ -1621,8 +1749,12 @@ debug/XOR.o: ../mainwindow/XOR.cpp ../mainwindow/XOR.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstring.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qchar.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qbytearray.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qrefcount.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qarraydata.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qstringbuilder.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qlist.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qalgorithms.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qiterator.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qcoreevent.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qscopedpointer.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qmetatype.h \
@@ -1664,6 +1796,7 @@ debug/XOR.o: ../mainwindow/XOR.cpp ../mainwindow/XOR.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtCore/qsharedpointer_impl.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qimage.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtransform.h \
+		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/QPainter \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpainter.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qtextoption.h \
 		../../../../../../../Users/Evan/Downloads/Utility/Qt/Creator/5.2.1/mingw48_32/include/QtGui/qpen.h \

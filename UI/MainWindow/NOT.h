@@ -7,9 +7,7 @@ class Gate;
 
 class NOT: public Gate {
 	public:
-    bool oneLink=false;
-		NOT();
-
+        NOT();
 		void set_linkage(Gate* g1);
 		bool get_output();
 

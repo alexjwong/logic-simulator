@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "gates.h"
 #include <QMouseEvent>
+#include <QString>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -89,7 +90,6 @@ void MainWindow::mousePressEvent(QMouseEvent *in){
             gates->last()->setFlag(gates->last()->ItemIsMovable,true);
             gates->last()->setFlag(gates->last()->ItemIsSelectable,true);
             gates->last()->setRect(in->pos(),60,30);
-            std::cout << gates->indexOf(gates->last()) << std::endl;
             ui->graphicsView_3->scene()->addItem(gates->last());
         }
         else if(defaultOR->isSelected()){
@@ -128,5 +128,11 @@ void MainWindow::mousePressEvent(QMouseEvent *in){
             ui->graphicsView_3->scene()->addItem(gates->last());
         }
     }
-    std::cout<<gates<<std::endl;
+}
+
+void MainWindow::UpdateTruthTable(){
+    ui->textEdit->insertPlainText(QString::fromStdString(generate_truthtable(*gates)));
+}
+void MainWindow::Clear(){
+
 }

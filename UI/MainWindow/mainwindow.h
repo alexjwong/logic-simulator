@@ -15,6 +15,7 @@
 #include "OR.h"
 #include "XNOR.h"
 #include "XOR.h"
+#include "Truthtable.h"
 #include <qline.h>
 
 namespace Ui {
@@ -45,7 +46,8 @@ private:
     NOT *defaultNOT=new NOT;
 
 public slots:
-    //clear();
+    void UpdateTruthTable();
+    void Clear();
 };
 
 #endif // MAINWINDOW_H

@@ -37,7 +37,8 @@ HEADERS  += mainwindow.h \
     Output.h \
     XNOR.h \
     XOR.h \
-    gates.h
+    gates.h \
+    Truthtable.h
 
 FORMS    += mainwindow.ui
 

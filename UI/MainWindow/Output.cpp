@@ -1,17 +1,14 @@
 #include "Output.h"
 
-Output::Output() : Gate() {
+Output::Output() : Gate('o') {
     oneLink=true;
-	//num_outputs++;
-    this->setToolTip("Output \"Gate\"");
+//	num_outputs++;
 	std::cout << "Output constructed." << std::endl;  
 }
 
-//void Gate::set_linkage(Gate* g1){}
-
 void Output::set_linkage(Gate* g1){
-    std::cout<<"linked \t"<<std::endl;
-    input = g1;
+    std::cout<<"linked"<<std::endl;
+	input = g1;
 }
 
 bool Output::get_output(){

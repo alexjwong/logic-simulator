@@ -8,11 +8,11 @@ class Gate;
 class Input: public Gate {
 	public:
 		Input();
-		Input(bool);
-        ~Input();
-
+		Input(bool in);
+		
+		
 		static int num_inputs;	
-		void set_output(int);
+		void set_output(int in);
 		bool get_output();
 	
 	private:

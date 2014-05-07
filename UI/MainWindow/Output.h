@@ -4,10 +4,9 @@
 #include "Gate.h"
 
 class Output: public Gate {
-	public:
-    bool oneLink=true;
+    public:
 		Output();
-		static int num_outputs;
+        static int num_outputs;
 		void set_linkage(Gate* g1);
 		bool get_output();
 

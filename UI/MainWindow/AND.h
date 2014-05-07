@@ -7,10 +7,10 @@ class Gate;
 
 class AND: public Gate {
 	public:
-		AND();
+        AND();
 
-        void set_linkage(Gate* g1, Gate* g2);
-        bool get_output();
+		void set_linkage(Gate* g1, Gate* g2);
+		bool get_output();
 
 	private:
 		Gate* input1;

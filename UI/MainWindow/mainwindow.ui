@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="toolTip">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Gates&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;IOGates&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QGraphicsView" name="graphicsView_3">
@@ -117,5 +117,42 @@ p, li { white-space: pre-wrap; }
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>UpdateTruthTable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>748</x>
+     <y>32</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>726</x>
+     <y>26</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clearButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>788</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>816</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>UpdateTruthTable()</slot>
+  <slot>Clear()</slot>
+ </slots>
 </ui>

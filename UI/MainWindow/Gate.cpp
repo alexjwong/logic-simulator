@@ -2,17 +2,44 @@
 
 QList<Gate*>* gates = new QList<Gate*>;
 
+int Gate::gate_count = 0;
+
 Gate::Gate(){
-    std::cout << "Gate constructed." << std::endl;
+	std::cout << "Gate constructed." << std::endl;
+	tier = 0;
+	type = 'g';
+	gate_count++;
 }
 
-Gate::~Gate(){
-    std::cout << "Gate destructed." << std::endl;
+Gate::Gate(char inType){
+	std::cout << "Gate constructed." << std::endl;
+	tier = 0;
+	type = inType;
+	gate_count++;
 }
-void Gate::set_linkage(Gate* g1){}
-void Gate::set_linkage(Gate* g1, Gate* g2){}
+void Gate::set_linkage(Gate* g1){
+std::cout<<"fuck"<<std::endl;}
+void Gate::set_linkage(Gate* g1, Gate* g2){
+    std::cout<<"shit"<<std::endl;}
+Gate::~Gate(){
+	std::cout << "Gate destructed." << std::endl;
+	gate_count--;
+}
+
+int Gate::get_tier(){
+	return tier;
+}
+
+void Gate::set_tier(int in){
+	tier = in;
+}
+
 bool Gate::get_output(){
-    return true;
+	return false;
+}
+
+char Gate::get_type(){
+	return type;
 }
 QRectF Gate::boundingRect() const{
     return QRectF(this->pos(),QSizeF(width,height));
@@ -22,6 +49,8 @@ void Gate::setRect(QPoint in, int newwidth, int newheight){
     width=newwidth;
     height=newheight;
 }
+void Gate::set_output(int in){}
+
 void Gate::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
     if(this->isSelected()){
         painter->fillRect(this->boundingRect(),Qt::black);
@@ -32,8 +61,12 @@ void Gate::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWid
 }
 
 void Gate::mousePressEvent(QGraphicsSceneMouseEvent *in){
+    if(this->isSelected()&&in->button()==0x00000001){
+        std::cout<<gates->indexOf(this)<<std::endl;
+    }
     if(in->button()==0x00000002){
         if(this->scene()->selectedItems().isEmpty()){
+            std::cout<<"fuck"<<std::endl;
             return;
         }
         else if(oneLink){
@@ -47,6 +80,7 @@ void Gate::mousePressEvent(QGraphicsSceneMouseEvent *in){
             if(this->scene()->selectedItems().size()==1){
                 for(int i=0; i<(gates->size()); i++){
                     if(gates->at(i)->isSelected()){
+                        std::cout<<"fuck me"<<std::endl;
                         this->set_linkage(gates->at(i));
                     }
                 }
@@ -56,6 +90,7 @@ void Gate::mousePressEvent(QGraphicsSceneMouseEvent *in){
             }
         }
         else{
+            std::cout<<"fuck twice"<<std::endl;
             if(this->scene()->selectedItems().length()!=2){
                 while(!this->scene()->selectedItems().isEmpty()){
                     this->scene()->selectedItems().first()->setSelected(false);
@@ -69,14 +104,13 @@ void Gate::mousePressEvent(QGraphicsSceneMouseEvent *in){
                         }
                     }
                 }
-                std::cout<<gates->indexOf(this)<<std::endl;
                 if(this->scene()->selectedItems().length()==2){
                     for(int k=0; k<(gates->size()); k++){
                         if(gates->at(k)->isSelected()){
                             for(int j=k+1; j<(gates->size()); j++){
                                 if(gates->at(j)->isSelected()){
                                     this->set_linkage(gates->at(k),gates->at(j));
-                                };
+                                }
                             }
                         }
                     }

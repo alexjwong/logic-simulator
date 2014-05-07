@@ -1,20 +1,16 @@
 #include "Input.h"
 
-Input::Input() : Gate() {
-	//num_inputs++;
-    this->setToolTip("Input \"Gate\"");
+int Input::num_inputs = 0;
+
+Input::Input() : Gate('i') {
+	num_inputs++;
 	std::cout << "Raw input default constructed." << std::endl;
 }
-//void Gate::set_linkage(Gate* g1){}
-//void Gate::set_linkage(Gate* g1, Gate* g2){}
-Input::Input(bool in) : Gate() {
-	output = in;
-	//num_inputs++;
-	std::cout << "Raw input constructed." << std::endl;
-}
 
-Input::~Input(){
-    std::cout << "shitfucker" << std::endl;
+Input::Input(bool in) : Gate('i') {
+	output = in;
+	num_inputs++;
+	std::cout << "Raw input constructed." << std::endl;
 }
 
 void Input::set_output(int in){

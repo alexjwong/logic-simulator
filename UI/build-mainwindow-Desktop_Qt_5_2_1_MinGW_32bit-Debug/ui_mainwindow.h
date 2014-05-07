@@ -72,6 +72,8 @@ public:
         MainWindow->setStatusBar(statusBar);
 
         retranslateUi(MainWindow);
+        QObject::connect(pushButton, SIGNAL(clicked()), MainWindow, SLOT(UpdateTruthTable()));
+        QObject::connect(clearButton, SIGNAL(clicked()), MainWindow, SLOT(Clear()));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
@@ -80,7 +82,7 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
 #ifndef QT_NO_TOOLTIP
-        IOGates->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Gates</p></body></html>", 0));
+        IOGates->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>IOGates</p></body></html>", 0));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_TOOLTIP
         graphicsView_3->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Circuit Simulator</p></body></html>", 0));
