@@ -11,6 +11,15 @@ void Output::set_linkage(Gate* g1){
 	input = g1;
 }
 
+void Output::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
+    if(!this->isSelected()){
+        painter->fillRect(this->boundingRect(),Qt::black);
+    }
+    else{
+        painter->drawRect(this->boundingRect());
+    }
+}
+
 bool Output::get_output(){
 	return input->get_output();
 }

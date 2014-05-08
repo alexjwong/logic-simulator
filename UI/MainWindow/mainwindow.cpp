@@ -134,5 +134,9 @@ void MainWindow::UpdateTruthTable(){
     ui->textEdit->insertPlainText(QString::fromStdString(generate_truthtable(*gates)));
 }
 void MainWindow::Clear(){
-
+    ui->textEdit->setText("");
+    while(gates->size()>9){
+         ui->graphicsView_3->scene()->removeItem(gates->at(9));
+         gates->removeAt(9);
+    }
 }

@@ -15,6 +15,15 @@ void NOT::set_linkage(Gate* g1){
 
 }
 
+void NOT::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
+    if(!this->isSelected()){
+        painter->fillRect(this->boundingRect(),Qt::red);
+    }
+    else{
+        painter->drawRect(this->boundingRect());
+    }
+}
+
 bool NOT::get_output(){
     return !input1->get_output();
 }

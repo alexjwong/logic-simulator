@@ -19,6 +19,15 @@ void OR::set_linkage(Gate* g1, Gate* g2){
 	}
 }
 
+void OR::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
+    if(!this->isSelected()){
+        painter->fillRect(this->boundingRect(),Qt::magenta);
+    }
+    else{
+        painter->drawRect(this->boundingRect());
+    }
+}
+
 bool OR::get_output(){
 	return (input1->get_output() | input2->get_output());
 }

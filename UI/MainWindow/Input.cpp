@@ -13,6 +13,15 @@ Input::Input(bool in) : Gate('i') {
 	std::cout << "Raw input constructed." << std::endl;
 }
 
+void Input::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
+    if(!this->isSelected()){
+        painter->fillRect(this->boundingRect(),Qt::gray);
+    }
+    else{
+        painter->drawRect(this->boundingRect());
+    }
+}
+
 void Input::set_output(int in){
 	if (in == 0){
 		output = false;

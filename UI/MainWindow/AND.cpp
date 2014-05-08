@@ -18,6 +18,15 @@ void AND::set_linkage(Gate* g1, Gate* g2){
 	}
 }
 
+void AND::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
+    if(!this->isSelected()){
+        painter->fillRect(this->boundingRect(),Qt::blue);
+    }
+    else{
+        painter->drawRect(this->boundingRect());
+    }
+}
+
 bool AND::get_output(){
 	return (input1->get_output() & input2->get_output());
 }

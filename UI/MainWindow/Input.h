@@ -14,6 +14,7 @@ class Input: public Gate {
 		static int num_inputs;	
 		void set_output(int in);
 		bool get_output();
+        void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
 	
 	private:
 		bool output;

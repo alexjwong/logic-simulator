@@ -52,7 +52,7 @@ void Gate::setRect(QPoint in, int newwidth, int newheight){
 void Gate::set_output(int in){}
 
 void Gate::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
-    if(this->isSelected()){
+    if(!this->isSelected()){
         painter->fillRect(this->boundingRect(),Qt::black);
     }
     else{

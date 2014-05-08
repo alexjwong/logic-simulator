@@ -19,6 +19,15 @@ void XNOR::set_linkage(Gate* g1, Gate* g2){
 	}
 }
 
+void XNOR::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
+    if(!this->isSelected()){
+        painter->fillRect(this->boundingRect(),Qt::yellow);
+    }
+    else{
+        painter->drawRect(this->boundingRect());
+    }
+}
+
 bool XNOR::get_output(){
     return !(input1->get_output() ^ input2->get_output());
 }

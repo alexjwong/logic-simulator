@@ -19,6 +19,15 @@ void XOR::set_linkage(Gate* g1, Gate* g2){
 	}
 }
 
+void XOR::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
+    if(!this->isSelected()){
+        painter->fillRect(this->boundingRect(),Qt::darkBlue);
+    }
+    else{
+        painter->drawRect(this->boundingRect());
+    }
+}
+
 bool XOR::get_output(){
 	return (input1->get_output() ^ input2->get_output());
 }

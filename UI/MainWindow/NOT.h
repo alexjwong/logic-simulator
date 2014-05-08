@@ -10,6 +10,7 @@ class NOT: public Gate {
         NOT();
 		void set_linkage(Gate* g1);
 		bool get_output();
+        void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
 
 	private:
 		Gate* input1;

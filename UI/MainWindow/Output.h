@@ -9,6 +9,7 @@ class Output: public Gate {
         static int num_outputs;
 		void set_linkage(Gate* g1);
 		bool get_output();
+        void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
 
 	private:
 		Gate* input;

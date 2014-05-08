@@ -19,6 +19,15 @@ void NOR::set_linkage(Gate* g1, Gate* g2){
 	}
 }
 
+void NOR::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
+    if(!this->isSelected()){
+        painter->fillRect(this->boundingRect(),Qt::green);
+    }
+    else{
+        painter->drawRect(this->boundingRect());
+    }
+}
+
 bool NOR::get_output(){
     return !(input1->get_output() | input2->get_output());
 }
